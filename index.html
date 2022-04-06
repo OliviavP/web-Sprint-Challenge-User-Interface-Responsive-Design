@@ -3,28 +3,34 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<title>Sprint Challenge - Home</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/5b12ffad4b.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/index.css"/>
 </head>
 
 <body>
 	<div>
 		<!-- header -->
 		<header>
-			<div>
-			  <h1>BLOOMTECH BAR AND GRILL</h1>
+			
+			  <h1><a href="index.html">BLOOMTECH BAR AND GRILL</a></h1>
               <nav>
 				<!-- nav -->
-				Menu
-				Reservations
-				Special Offers
-				Contact
-			 </nav>
+				<div>
+				<a href="menu.html">Menu</a>
+				<a href="#reservations">Reservations</a>
+				<a href="#specialoffers">Special Offers</a>
+				<a href="#contact">Contact</a>
 			</div>
+			<i href="https://fontawesome.com/search?q=facebook&s=solid%2Cbrands" class="fa fa-facebook"><i>
+			<i href="https://fontawesome.com/search?q=twitter&s=solid%2Cbrands" class="fa fa-twitter"></i>
+			<i href="https://fontawesome.com/search?q=instagram&s=solid%2Cbrands" class="fa fa-instagram"></i>
+			 </nav>
 		</header>
 
 		<!-- gallery section -->
@@ -32,23 +38,23 @@
 			<div>
 				<h2>OUR FOOD</h2>
 
-				img/food-avocadotoast.jpg
+				<img src="img/food-avocadotoast.jpg" alt="Picture of avocado toast with tomatoes and a hard boiled egg on top"/>
 
-				img/food-burger.jpg
+				<img src="img/food-burger.jpg" alt="Picture of a glass, burger, and another dish"/>
 
-				img/food-poutine.jpg
+				<img src="img/food-poutine.jpg" alt="Picture of poutine"/>
 
-				img/food-ribs.jpg
+				<img src="img/food-ribs.jpg" alt="Picture of ribs with sauce and vegetables"/>
 
-				img/food-sandwich.jpg
+				<img src="img/food-sandwich.jpg" alt="Picture of a vegetable sandwich"/>
 
-				img/food-sausage.jpg
+				<img src="img/food-sausage.jpg" alt="Picture of a sausage in a bread bun with vegetables"/>
 
-				img/food-steak.jpg
+				<img src="img/food-steak.jpg" alt="Picture of a steak with sauce and vegetables"/>
 
-				img/food-tacos.jpg
+				<img src="img/food-tacos.jpg" alt="Picture of fish tacos"/>
 
-				img/food-wings.jpg
+				<img src="img/food-wings.jpg" alt="Picture of wings and vegetables with an orange Jarritos drink"/>
 			</div>
 		</section>
 
@@ -59,9 +65,6 @@
 		<section class="about">
 			<div class="about-container">
 				<h2>ABOUT US</h2>
-
-				<div id="cooks" class="pic">
-				</div>
 
 				<div class="text">
 					<h3>Good Food, Great People</h3>
@@ -126,15 +129,18 @@
 		<!-- footer -->
 		<footer>
 			<!-- email signup -->
-			Join our mailing list!
-			Sign Up
+			<h2>Join our mailing list!</h2>
+			<input placeholder="Email Address">
+			<button>Sign Up</button>
 			<!-- nav -->
-			Menu
-			Reservations
-			Special Offers
-			Contact
+		<nav>
+			<a href="menu.html">Menu</a>
+			<a href="#reservations">Reservations</a>
+			<a href="#specialoffers">Special Offers</a>
+			<a href="#contact">Contact</a>
+		</nav>
 			<!-- copyright -->
-			©2022 BloomTech Restaurant Group, Inc. All Rights Reserved.
+			<p class="copyright">©2022 BloomTech Restaurant Group, Inc. All Rights Reserved.</p>
 		</footer>
 	</div>
 </body>
