@@ -130,6 +130,9 @@ table {
 
 * {
   box-sizing: border-box;
+  text-decoration: none;
+  color: rgb(225, 239, 230);
+  font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -140,7 +143,6 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
 }
 
@@ -158,7 +160,6 @@ i {
 
 h1 {
   font-size: 7.5rem;
-  color: rgb(225, 239, 230);
 }
 
 h2 {
@@ -184,8 +185,28 @@ header {
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-evenly;
+  text-align: center;
+}
 
-  color: rgb(225, 239, 230);
+header div {
+  background-color: rgb(0, 4, 17, 0.8);
+  height: 30%;
+  width: 100%;
+}
+
+nav div {
+  display: flex;
+  justify-content: space-evenly;
+}
+nav div a {
+  font-size: 18px;
+}
+.social i {
+  margin: 0 4px;
+}
+.social {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* spacers */
@@ -203,13 +224,24 @@ header {
 /* gallery section */
 .gallery {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   text-align: center;
   background-color: rgb(0, 4, 17);
   display: flex;
   justify-content: center;
+  padding: 4%;
 }
 
+.gallery div img {
+  width: 30%;
+  margin: 8px;
+}
+
+.gallery div h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  margin-bottom: 4px;
+}
 /* about us section */
 .about {
   width: 100%;
@@ -219,6 +251,16 @@ header {
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text h3 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.text p {
+  font-size: 18px;
 }
 
 .about-container {
@@ -232,6 +274,7 @@ header {
 
 .about h2 {
   width: 100%;
+  font-size: 40px;
 }
 
 .about-container .text {
@@ -291,18 +334,65 @@ footer {
   height: 15vh;
   padding-top: 2.5vh;
   font-size: 3rem;
+  display: flex;
+  background: rgb(0, 4, 17);
+}
+.email {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* mobile media query */
 @media (max-width: 428px) {
   /* header section */
+  header {
+    font-family: 'roboto', sans-serif;
+  }
+
+  header div {
+    flex-direction: column;
+  }
+
+  nav div {
+    font-size: 20px;
+  }
 
   /* gallery section */
   .gallery {
     height: auto;
   }
+  .gallery div img {
+    width: 100%;
+  }
+
+  .gallery div h2 {
+    font-size: 50px;
+  }
 
   /* about us section */
+  .text h3 {
+    font-size: 38px;
+    margin-bottom: 3px;
+  }
+
+  .text p {
+    font-size: 26px;
+  }
+
+  .about-container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 4, 17, 0.8);
+  }
+
+  .about-container .text {
+    width: 50%;
+  }
 
   .about {
     height: 200vh;
@@ -318,8 +408,16 @@ footer {
   }
 
   /* contact us section */
+  .contact {
+    font-family: 'roboto', sans-serif;
+  }
+
   .contact h3 {
     padding-top: 2.5vh;
+  }
+
+  .address address p {
+    font-size: 18px;
   }
 
   .info {
@@ -345,5 +443,31 @@ footer {
     height: auto;
     padding-top: 2.5vh;
     font-size: 2rem;
+    font-family: 'roboto', sans-serif;
+  }
+
+  footer nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  footer h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  button {
+    color: rgb(0, 4, 17);
+    align-items: center;
+  }
+
+  footer p {
+    font-size: 1.5rem;
+  }
+
+  footer input {
+    align-items: center;
   }
 }
